@@ -1,0 +1,19 @@
+zadanie 22
+
+1. start 28.10
+2. html/css/js (w tym jquery), bootstrap 4
+3. rwd obowiazkowo
+4. przydatne pojecia: material design, material design for bootstrap 4: http://mdbootstrap.com
+
+
+IKONY
+https://zavoloklom.github.io/material-design-iconic-font/icons.html
+jquery load more: https://codepen.io/elmahdim/pen/sGkvH
+jquery filtrowanie obrazków https://www.youtube.com/watch?v=aVn0tHZa0CQ 
+video: https://designmodo.com/video-player/
+
+video
+https://codepen.io/dudleystorey/pen/knqyK
+
+Patrnerzy
+https://www.youtube.com/watch?v=mK2U9fMa9Rw
