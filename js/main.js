@@ -1,5 +1,21 @@
-$(document).ready(function(){
+// scroll menu
+function init() {
+  window.addEventListener('scroll', function(e){
+    var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+    shrinkOn = 1,
+    navbar = document.querySelector(".navbar");
+    if (distanceY > shrinkOn) {
+      classie.add(navbar,"smaller");
+    } else {
+      if (classie.has(navbar,"smaller")) {
+        classie.remove(navbar,"smaller");
+      }
+    }
+  });
+}
+window.onload = init();
 
+$(document).ready(function(){
 // scroll btn
 $("#scroll-btn").click(function (e) {
   $('html,body').animate({
