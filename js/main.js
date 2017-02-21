@@ -43,24 +43,40 @@ $("#scroll-btn").click(function (e) {
   $("#lightgallery").lightGallery(); 
 
 
-// Category filter
+// // Category filter
+//   $('.category-item').click(function(){
+//     var category = $(this).attr('id');
+
+//     if(category == 'all'){
+//       $('.portfolio-item').addClass('hide');
+//       setTimeout(function(){
+//         $('.portfolio-item').removeClass('hide');
+//       }, 300);
+//     } 
+//     else {
+//       $('.portfolio-item').addClass('hide');
+//       setTimeout(function(){
+//         $('.'+ category).removeClass('hide');
+//       }, 300);
+//     }
+//   });
+
   $('.category-item').click(function(){
     var category = $(this).attr('id');
 
     if(category == 'all'){
-      $('.portfolio-item').addClass('hide');
+      $('.portfolio-item').fadeOut();
       setTimeout(function(){
-        $('.portfolio-item').removeClass('hide');
+        $('.portfolio-item').fadeIn();
       }, 300);
     } 
     else {
-      $('.portfolio-item').addClass('hide');
+      $('.portfolio-item').fadeOut();
       setTimeout(function(){
-        $('.'+ category).removeClass('hide');
+        $('.'+ category).fadeIn();
       }, 300);
     }
   });
-
 
   // Count Up
   var options = {

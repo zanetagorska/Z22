@@ -14,7 +14,6 @@
       padding-right: 10px;
     }
   }
-
 }
 
 header {
@@ -304,22 +303,19 @@ header {
     cursor: pointer;
     font-weight: 700;
     text-transform: uppercase;
-  }
 
-  .category-item:hover{
-    background: @blue;
-    color: #fff;
+    &:hover{
+      background: @blue;
+      color: #fff;
+    }
   }
 
   .portfolio-item {
-    padding: 0 20px 28px;
-    transform: scale(1);
-    transition: all 0.4s ease-in-out;
-
 
     .img-frame {
       box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
       padding: 8px;
+      margin-bottom: 30px;
 
       .bg-img-box {
         background-image: url('../img/portfolio/portf1.jpg');
@@ -337,13 +333,6 @@ header {
     p {
       font-weight: 300;
     }
-  }
-
-  .hide {
-    transform: scale(0);
-    width: 0;
-    padding: 0;
-    transition: all 0.4s ease-in-out;
   }
 }
 
