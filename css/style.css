@@ -192,8 +192,28 @@ header .navbar #search-btn .zmdi-circle {
 #hero .btn-lg i {
   padding-left: 10px;
 }
-#hero .scrolldown-box {
-  margin-bottom: 2.7857em;
+#hero #scroll-btn {
+  display: block;
+  width: 31px;
+  margin: 0 auto 2.375em;
+  cursor: pointer;
+  -webkit-animation: godown 2s infinite;
+  animation: godown 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes godown {
+  0% {
+    -webkit-transform: translate(0, 0);
+  }
+  20% {
+    -webkit-transform: translate(0, 10px);
+  }
+  40% {
+    -webkit-transform: translate(0, 0);
+  }
+}
+#hero #scroll-btn:hover {
+  opacity: 0.6;
 }
 #services {
   color: #fff;
@@ -310,6 +330,9 @@ header .navbar #search-btn .zmdi-circle {
 }
 #portfolio .portfolio-item {
   padding: 0 20px 28px;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
   -webkit-transition: all 0.4s ease-in-out;
           transition: all 0.4s ease-in-out;
 }

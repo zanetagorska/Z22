@@ -1,5 +1,12 @@
 $(document).ready(function(){
 
+// scroll btn
+$("#scroll-btn").click(function (e) {
+  $('html,body').animate({
+      scrollTop: 1200,
+  }, 1000);
+});
+
 // video
   var video = document.getElementById("skills-video");
   var btnskills = document.getElementById("btn-skills");
