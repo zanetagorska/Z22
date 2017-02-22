@@ -1,27 +1,27 @@
 // scroll menu
-function init() {
-  window.addEventListener('scroll', function(e){
-    var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-    shrinkOn = 1,
-    navbar = document.querySelector(".navbar");
-    if (distanceY > shrinkOn) {
-      classie.add(navbar,"smaller");
-    } else {
-      if (classie.has(navbar,"smaller")) {
-        classie.remove(navbar,"smaller");
+  function init() {
+    window.addEventListener('scroll', function(e){
+      var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+      shrinkOn = 1,
+      navbar = document.querySelector(".navbar");
+      if (distanceY > shrinkOn) {
+        classie.add(navbar,"smaller");
+      } else {
+        if (classie.has(navbar,"smaller")) {
+          classie.remove(navbar,"smaller");
+        }
       }
-    }
-  });
-}
-window.onload = init();
+    });
+  }
+  window.onload = init();
 
 $(document).ready(function(){
 // scroll btn
-$("#scroll-btn").click(function (e) {
-  $('html,body').animate({
-      scrollTop: 1200,
-  }, 1000);
-});
+  $("#scroll-btn").click(function (e) {
+    $('html,body').animate({
+        scrollTop: 1200,
+    }, 1000);
+  });
 
 // video
   var video = document.getElementById("skills-video");
@@ -40,7 +40,7 @@ $("#scroll-btn").click(function (e) {
   });
 
 // Gallery
-  $("#lightgallery").lightGallery(); 
+  $("#lightgallery").lightGallery();
 
 // Category filter
   $('.category-item').click(function(){
@@ -69,31 +69,10 @@ $("#scroll-btn").click(function (e) {
       $(this).find('.overlay').animate({'opacity': '0'}, 300);
     });
 
-  // Count Up
-  var options = {
-    useEasing : true, 
-    useGrouping : false, 
-    separator : '', 
-    decimal : '.', 
-    prefix : '', 
-    suffix : '' 
-  };
-
-  var factNumbers = new Array(4);
-  factNumbers[0] = new CountUp("fact-num1", 0, 518, 0, 15, options);
-  factNumbers[1] = new CountUp("fact-num2", 0, 177, 0, 15, options);
-  factNumbers[2] = new CountUp("fact-num3", 0, 2465, 0, 15, options);
-  factNumbers[3] = new CountUp("fact-num4", 0, 2465, 0, 15, options);
-
-  for (i=0; i<4; i++){
-    factNumbers[i].start();
-  }
-
-  // matchHeight
+// matchHeight
   $('.mh').matchHeight();
 
-
-  // Owl
+// Owl
   $("#owl-team").owlCarousel({
     autoPlay: 3000,
     items : 3,
@@ -110,8 +89,24 @@ $("#scroll-btn").click(function (e) {
     pagination: false
   });
 
+// stats
+  $('#fact').one('inview', function(event, isInView) {
+    if (isInView) {
+      $('.counter-number').each(function () {
+        $(this).prop('Counter',0).animate({
+          Counter: $(this).text()
+        }, {
+          duration: 3000,
+          easing: 'swing',
+          step: function (now) {
+            $(this).text(Math.ceil(now));
+          }
+        });
+      });
+    }
+  });
 
-
+  
 });
 
 
