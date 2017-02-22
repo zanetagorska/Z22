@@ -58,10 +58,6 @@ ul li {
 .no-padding {
   padding: 0;
 }
-.light {
-  font-weight: 300;
-  text-transform: uppercase;
-}
 section {
   background: #fff;
 }
@@ -379,16 +375,37 @@ header .navbar-collapse {
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
   padding: 8px;
   margin-bottom: 30px;
+  position: relative;
 }
-#portfolio .portfolio-item .img-frame .bg-img-box {
-  background-image: url('../img/portfolio/portf1.jpg');
-  background-position: center;
-  background-size: cover;
-  padding: 109px 0;
+#portfolio .portfolio-item .overlay {
+  background: #2095f2;
+  opacity: 0;
   text-align: center;
+  padding-top: 9em;
+  position: absolute;
+  top: 8px;
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
 }
-#portfolio .portfolio-item p {
+#portfolio .portfolio-item .overlay .icons-wrapper {
+  margin-bottom: 1.2em;
+}
+#portfolio .portfolio-item .overlay .icons-wrapper .zmdi {
+  font-size: 16px;
+  color: #2095f2;
+  background: #fff;
+  margin: 2px;
+  padding: 7px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+#portfolio .portfolio-item .overlay h4 {
+  color: #fff;
+}
+#portfolio .portfolio-item .overlay p {
   font-weight: 300;
+  color: #fff;
 }
 #team {
   padding: 119px 0;
@@ -419,6 +436,8 @@ header .navbar-collapse {
 }
 #team .item .info-box p {
   margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 #team .item .info-box ul {
   display: table;
