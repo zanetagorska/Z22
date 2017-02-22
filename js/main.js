@@ -42,25 +42,7 @@ $("#scroll-btn").click(function (e) {
 // Gallery
   $("#lightgallery").lightGallery(); 
 
-
-// // Category filter
-//   $('.category-item').click(function(){
-//     var category = $(this).attr('id');
-
-//     if(category == 'all'){
-//       $('.portfolio-item').addClass('hide');
-//       setTimeout(function(){
-//         $('.portfolio-item').removeClass('hide');
-//       }, 300);
-//     } 
-//     else {
-//       $('.portfolio-item').addClass('hide');
-//       setTimeout(function(){
-//         $('.'+ category).removeClass('hide');
-//       }, 300);
-//     }
-//   });
-
+// Category filter
   $('.category-item').click(function(){
     var category = $(this).attr('id');
 
@@ -77,6 +59,15 @@ $("#scroll-btn").click(function (e) {
       }, 300);
     }
   });
+
+// Portfolio hover img
+  $('.portfolio-item').hover(
+    function(){
+      $(this).find('.overlay').animate({'opacity': '0.9'}, 300);
+    },
+    function(){
+      $(this).find('.overlay').animate({'opacity': '0'}, 300);
+    });
 
   // Count Up
   var options = {
