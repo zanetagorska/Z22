@@ -295,6 +295,10 @@ header {
 #portfolio {
   padding: 8.5em 0;
 
+  #lightgallery {
+    margin-bottom: 2.2em;
+  }
+
   .category-item {
     float: left;
     width: 20%;
@@ -322,7 +326,8 @@ header {
       background: @blue;
       opacity: 0;
       text-align: center;
-      padding-top: 9em;
+      // 76px = 24px + 52px 
+      padding-top: ~"calc(50% - 76px)";
       position: absolute;
       top: 8px;
       width: ~"calc(100% - 16px)";
@@ -352,6 +357,15 @@ header {
         font-weight: 300;
         color: #fff;
       }
+    }
+  }
+
+  .btn {
+    padding: 10px 26px;
+
+    .zmdi-arrow-right {
+      margin-left: 16px;
+      font-size: 22px;
     }
   }
 }

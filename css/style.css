@@ -358,6 +358,9 @@ header .navbar-collapse {
 #portfolio {
   padding: 8.5em 0;
 }
+#portfolio #lightgallery {
+  margin-bottom: 2.2em;
+}
 #portfolio .category-item {
   float: left;
   width: 20%;
@@ -381,7 +384,7 @@ header .navbar-collapse {
   background: #2095f2;
   opacity: 0;
   text-align: center;
-  padding-top: 9em;
+  padding-top: calc(50% - 76px);
   position: absolute;
   top: 8px;
   width: calc(100% - 16px);
@@ -406,6 +409,13 @@ header .navbar-collapse {
 #portfolio .portfolio-item .overlay p {
   font-weight: 300;
   color: #fff;
+}
+#portfolio .btn {
+  padding: 10px 26px;
+}
+#portfolio .btn .zmdi-arrow-right {
+  margin-left: 16px;
+  font-size: 22px;
 }
 #team {
   padding: 119px 0;
