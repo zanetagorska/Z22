@@ -499,6 +499,38 @@ header .navbar-collapse {
 #testimonials {
   padding: 8.2142em 0;
 }
+#testimonials #testimonials-carousel {
+  margin-top: 257px;
+}
+#testimonials #testimonials-carousel li {
+  margin: 0 27px;
+  border: solid 5px #03a9f4;
+  border-radius: 50%;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.15);
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+#testimonials #testimonials-carousel li.active {
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
+  width: 122px;
+  height: 122px;
+  border: solid 5px #fff;
+}
+#testimonials #testimonials-carousel .text-block {
+  width: 80%;
+  margin: 0 auto;
+}
+#testimonials #testimonials-carousel .carousel-indicators {
+  bottom: 0;
+  margin-bottom: 207px;
+}
+#testimonials #testimonials-carousel .carousel-control {
+  background-image: none;
+  font-size: 20px;
+}
 #clients {
   padding: 3.2857em 0;
   background: #f5f5f5;
