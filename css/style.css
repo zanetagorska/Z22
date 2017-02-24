@@ -431,7 +431,7 @@ header .navbar-collapse {
 #team .item .img-box img {
   border: solid 10px #03a9f4;
   margin: 0 auto;
-  width: 50%;
+  width: 180px;
 }
 #team .item .img-box img:hover {
   border: solid 10px #fff;
