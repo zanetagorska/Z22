@@ -3,12 +3,12 @@
     window.addEventListener('scroll', function(e){
       var distanceY = window.pageYOffset || document.documentElement.scrollTop,
       shrinkOn = 1,
-      navbar = document.querySelector(".navbar");
+      navbar = document.querySelector('.navbar');
       if (distanceY > shrinkOn) {
-        classie.add(navbar,"smaller");
+        classie.add(navbar,'smaller');
       } else {
-        if (classie.has(navbar,"smaller")) {
-          classie.remove(navbar,"smaller");
+        if (classie.has(navbar,'smaller')) {
+          classie.remove(navbar,'smaller');
         }
       }
     });
@@ -17,19 +17,19 @@
 
 $(document).ready(function(){
 // scroll btn
-  $("#scroll-btn").click(function (e) {
+  $('#scroll-btn').click(function (e) {
     $('html,body').animate({
         scrollTop: 1200,
     }, 1000);
   });
 
 // video
-  var video = document.getElementById("skills-video");
-  var btnskills = document.getElementById("btn-skills");
-  var sectskills = document.getElementById("skills");
+  var video = document.getElementById('skills-video');
+  var btnskills = document.getElementById('btn-skills');
+  var sectskills = document.getElementById('skills');
 
-  btnskills.addEventListener("click", function() {
-    sectskills.classList.toggle("stopfade");
+  btnskills.addEventListener('click', function() {
+    sectskills.classList.toggle('stopfade');
     if (video.paused) {
       video.play();
       btnskills.innerHTML = '<i class="zmdi zmdi-pause"></i>';
@@ -40,7 +40,7 @@ $(document).ready(function(){
   });
 
 // Gallery
-  $("#lightgallery").lightGallery();
+  $('#lightgallery').lightGallery();
 
 // Category filter
   $('.category-item').click(function(){
@@ -73,20 +73,28 @@ $(document).ready(function(){
   $('.mh').matchHeight();
 
 // Owl
-  $("#owl-team").owlCarousel({
+  $('#owl-team').owlCarousel({
     autoPlay: 3000,
     items : 3,
     itemsDesktop : [1199,3],
     itemsDesktopSmall : [979,3]
   });
 
-  $("#owl-clients").owlCarousel({
+  $('#owl-clients').owlCarousel({
     autoPlay: 3000,
     items : 5,
     itemsDesktop : [1199,5],
     itemsDesktopSmall : [979,5],
     navigation : true,
     pagination: false
+  });
+
+// pricing
+  $('.product').hover(
+    function(){
+      $(this).find('.product-header').css({'border-bottom' : 'solid 1px #f95d5a'})},
+    function (){
+      $(this).find('.product-header').css({'border-bottom' : 'solid 1px #f5f5f5'})
   });
 
 // stats

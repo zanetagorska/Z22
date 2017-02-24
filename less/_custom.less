@@ -333,18 +333,16 @@ header {
       width: ~"calc(100% - 16px)";
       height: ~"calc(100% - 16px)";
 
-      .icons-wrapper {
+      .zmdi-hc-stack {
         margin-bottom: 1.2em;
+        font-size: 16px;
 
-        .zmdi {
-          font-size: 16px;
+        .zmdi-hc-stack-1x {
           color: @blue;
-          background: #fff;
-          margin: 2px;
-          padding: 7px;
-          border-radius: 50%;
-          width: 30px;
-          height: 30px;
+        }
+
+        .zmdi-hc-stack-2x {
+          color: #fff;
         }
       }
 
@@ -504,11 +502,8 @@ header {
     .carousel-control {
       background-image: none;
       font-size: 20px;
-
     }
   }
-
-
 }
 
 #clients {
@@ -516,18 +511,15 @@ header {
   background: #f5f5f5;
 }
 
-
 #pricing-table {
-  padding: 8.5714em 0;
+  padding: 8.5714em 0 0;
 
   .product {
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
     text-transform: uppercase;
-    padding-top: 34px;
-    margin-top: 19px;
-    padding-bottom: 34px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 34px 0;
+    margin: 35px 0;
+    cursor: pointer;
 
     h6, p{
       text-transform: none;
@@ -535,10 +527,11 @@ header {
 
     .product-header {
       padding-bottom: 30px;
-      border-bottom: solid 1px rgb(245, 245, 245);
+      border-bottom: solid 1px #f5f5f5;
 
       .price-box {
         color: @blue;
+        margin: 30px 0;
 
         strong {
           font-size: 1.7142em;
@@ -547,9 +540,10 @@ header {
     }
 
     .product-details {
-      padding: 57px 0 35px;
 
       ul {
+        margin: 43px 0;
+
         li {
           color: #727272;
           line-height: 3em;
@@ -564,16 +558,17 @@ header {
 
     &.distinction {
       box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.1);
-      padding-top: 53px;
+      padding-top: 50px;
       margin-top: 0;
-      padding-bottom: 53px;
-
-      .product-header {
-        border-bottom: solid 1px @red;
-      }
+      padding-bottom: 50px;
 
       .price-box strong {
         font-size: 2.1428em;
+        margin: 40px 0;
+      }
+
+      ul {
+        margin: 55px 0;
       }
 
       .product-details .btn {
@@ -641,9 +636,11 @@ header {
 
     }
     .btn {
-      border-radius: 5px;
+      font-size: 16px;
+      border-radius: 24px;
+      padding: 12px;
       display: block;
-      width: 200px;
+      width: 165px;
       margin: 0 auto;
 
       .sub {
@@ -656,4 +653,7 @@ header {
 
 footer {
   padding: 100px 0;
+  .zmdi-hc-stack {
+    font-size: 15px;
+  }
 }
