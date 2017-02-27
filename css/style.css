@@ -563,8 +563,28 @@ header .navbar-collapse {
   color: #fff;
 }
 #clients {
-  padding: 3.2857em 0;
+  padding: 3.2857em 0 7.1357em;
   background: #f5f5f5;
+}
+#clients .owl-controls {
+  margin-top: -60px;
+}
+#clients .owl-controls .owl-prev,
+#clients .owl-controls .owl-next {
+  position: absolute;
+  background: #f95d5a;
+  opacity: 1;
+  transition: all 0.3 ease-in;
+}
+#clients .owl-controls .owl-prev:hover,
+#clients .owl-controls .owl-next:hover {
+  background: #2095f2;
+}
+#clients .owl-controls .owl-prev {
+  left: 0;
+}
+#clients .owl-controls .owl-next {
+  right: 0;
 }
 #pricing-table {
   padding: 8.5714em 0 0;

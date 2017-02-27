@@ -83,11 +83,16 @@ $(document).ready(function(){
   $('#owl-clients').owlCarousel({
     autoPlay: 3000,
     items : 5,
-    itemsDesktop : [1199,5],
-    itemsDesktopSmall : [979,5],
+    itemsDesktop : [1200, 5],
+    itemsDesktopSmall : [992, 5],
+    itemsTablet: [768, 3],
+    itemsMobile: [480, 1],
     navigation : true,
     pagination: false
   });
+
+  $('#owl-clients').find('.owl-prev').html('<i class="zmdi zmdi-chevron-left"></i>');
+  $('#owl-clients').find('.owl-next').html('<i class="zmdi zmdi-chevron-right"></i>');
 
 // pricing
   $('.product').hover(

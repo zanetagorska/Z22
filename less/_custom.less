@@ -542,8 +542,30 @@ header {
 }
 
 #clients {
-  padding: 3.2857em 0;
+  padding: 3.2857em 0 7.1357em;
   background: #f5f5f5;
+
+  .owl-controls {
+    margin-top: -60px;
+
+    .owl-prev, .owl-next {
+      position: absolute;
+      background: @red;
+      opacity: 1;
+      transition: all 0.3 ease-in;
+
+      &:hover {
+        background: @blue;
+      }
+    }
+
+    .owl-prev {
+      left: 0;
+    }
+    .owl-next {
+      right: 0;
+    }
+  }
 }
 
 #pricing-table {
