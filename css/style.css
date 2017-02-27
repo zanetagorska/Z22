@@ -495,9 +495,24 @@ header .navbar-collapse {
   padding: 8.2142em 0;
 }
 #testimonials #testimonials-carousel {
-  margin-top: 257px;
+  margin-top: 6em;
 }
-#testimonials #testimonials-carousel li {
+@media screen and (min-width: 992px) {
+  #testimonials #testimonials-carousel {
+    margin-top: 9em;
+  }
+}
+#testimonials #testimonials-carousel .carousel-indicators {
+  top: 0;
+  width: 60%;
+  margin-top: -10em;
+}
+@media screen and (min-width: 1200px) {
+  #testimonials #testimonials-carousel .carousel-indicators {
+    width: 60%;
+  }
+}
+#testimonials #testimonials-carousel .carousel-indicators li {
   margin: 0 27px;
   border: solid 5px #03a9f4;
   border-radius: 50%;
@@ -507,24 +522,45 @@ header .navbar-collapse {
   cursor: pointer;
   overflow: hidden;
   transition: all 0.4s;
+  display: none;
 }
-#testimonials #testimonials-carousel li.active {
+@media screen and (min-width: 768px) {
+  #testimonials #testimonials-carousel .carousel-indicators li {
+    display: inline-block;
+  }
+}
+#testimonials #testimonials-carousel .carousel-indicators li.active {
   box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
   width: 122px;
   height: 122px;
   border: solid 5px #fff;
+  display: inline-block;
 }
 #testimonials #testimonials-carousel .text-block {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
+  padding: 1.75em;
+  border: 1px solid #fff;
 }
-#testimonials #testimonials-carousel .carousel-indicators {
-  bottom: 0;
-  margin-bottom: 207px;
+@media screen and (min-width: 768px) {
+  #testimonials #testimonials-carousel .text-block {
+    padding: 2.8em;
+  }
 }
 #testimonials #testimonials-carousel .carousel-control {
   background-image: none;
+  opacity: 1;
+  text-shadow: none;
+}
+#testimonials #testimonials-carousel .carousel-control .zmdi-hc-stack {
   font-size: 20px;
+  margin-top: 50%;
+}
+#testimonials #testimonials-carousel .carousel-control .zmdi-red {
+  color: #f95d5a;
+}
+#testimonials #testimonials-carousel .carousel-control .zmdi-white {
+  color: #fff;
 }
 #clients {
   padding: 3.2857em 0;
