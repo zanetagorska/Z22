@@ -577,6 +577,7 @@ header {
     padding: 34px 0;
     margin: 35px 0;
     cursor: pointer;
+    transition: all 0.3s ease;
 
     h6, p{
       text-transform: none;
@@ -618,6 +619,12 @@ header {
       padding-top: 50px;
       margin-top: 0;
       padding-bottom: 50px;
+      margin-left: -15px;
+      margin-right: -15px;
+
+      .product-header {
+        border-bottom: solid 1px @red;
+      }
 
       .price-box strong {
         font-size: 2.1428em;
@@ -631,8 +638,12 @@ header {
       .product-details .btn {
         font-weight: 500;
         font-size: 1.4285em;
-        background: @red;
-        border-color: @red;
+        transition: all 0.3 ease-in;
+
+        &:hover {
+          background: @red;
+          border-color: @red;
+        }
       }
     }
   }

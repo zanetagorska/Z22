@@ -595,6 +595,7 @@ header .navbar-collapse {
   padding: 34px 0;
   margin: 35px 0;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 #pricing-table .product h6,
 #pricing-table .product p {
@@ -627,6 +628,11 @@ header .navbar-collapse {
   padding-top: 50px;
   margin-top: 0;
   padding-bottom: 50px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+#pricing-table .product.distinction .product-header {
+  border-bottom: solid 1px #f95d5a;
 }
 #pricing-table .product.distinction .price-box strong {
   font-size: 2.1428em;
@@ -638,6 +644,9 @@ header .navbar-collapse {
 #pricing-table .product.distinction .product-details .btn {
   font-weight: 500;
   font-size: 1.4285em;
+  transition: all 0.3 ease-in;
+}
+#pricing-table .product.distinction .product-details .btn:hover {
   background: #f95d5a;
   border-color: #f95d5a;
 }

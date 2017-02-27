@@ -97,9 +97,9 @@ $(document).ready(function(){
 // pricing
   $('.product').hover(
     function(){
-      $(this).find('.product-header').css({'border-bottom' : 'solid 1px #f95d5a'})},
+      $(this).addClass('distinction')},
     function (){
-      $(this).find('.product-header').css({'border-bottom' : 'solid 1px #f5f5f5'})
+      $(this).removeClass('distinction')
   });
 
 // stats
