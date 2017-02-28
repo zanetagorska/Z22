@@ -13,6 +13,10 @@
     i {
       padding-right: 10px;
     }
+
+    .social-media {
+      padding-right: 5.1vw;
+    }
   }
 }
 
@@ -84,8 +88,19 @@ header {
     #search-btn {
       padding: 37px 70px 37px 37px;
 
-      .zmdi-circle{
+      .zmdi-hc-stack {
         color: @red;
+        transition: all 0.2s ease-in;
+        &:hover {
+          color: @blue;
+        }
+      }
+      .zmdi-hc-inverse {
+        color: #fff;
+        transition: all 0.2s ease-in;
+        &:hover {
+          color: #eee;
+        }
       }
     }
   }
@@ -229,10 +244,11 @@ header {
   .zmdi-hc-stack {
     font-size: 20px;
     margin-right: 16px;
-  }
-
-  .zmdi-circle {
     color: @red;
+
+    .zmdi-hc-inverse {
+       color: #fff;
+    }
   }
 }
 
@@ -307,6 +323,7 @@ header {
     cursor: pointer;
     font-weight: 700;
     text-transform: uppercase;
+    transition: all 0.4s ease-in;
 
     &:hover{
       background: @blue;
@@ -332,20 +349,6 @@ header {
       top: 8px;
       width: ~"calc(100% - 16px)";
       height: ~"calc(100% - 16px)";
-
-      .zmdi-hc-stack {
-        margin-bottom: 1.2em;
-        font-size: 16px;
-
-        .zmdi-hc-stack-1x {
-          color: @blue;
-        }
-
-        .zmdi-hc-stack-2x {
-          color: #fff;
-        }
-      }
-
 
       h4 {
         color: #fff;
@@ -389,6 +392,7 @@ header {
         border: solid 10px #03a9f4;
         margin: 0 auto;
         width: 180px;
+        transition: all 0.2s ease-in;
 
         &:hover {
           border: solid 10px #fff;
@@ -411,6 +415,7 @@ header {
         padding-top: 10px;
         border-top: solid 1px #03a9f4;
         cursor: pointer;
+        transition: all 0.2s ease-in;
 
         &:hover {
           border-top: solid 1px #fff;
@@ -420,15 +425,12 @@ header {
           float: left;
           padding: 0 10px;
 
-          a {
+          .zmdi {
             color: #fff;
-
+            font-size: 16px;
+            transition: all 0.2s ease-in;
             &:hover{
               color: @red;
-            }
-
-            i {
-              font-size: 16px;
             }
           }
         }
@@ -542,12 +544,12 @@ header {
 
     .owl-prev, .owl-next {
       position: absolute;
-      background: @red;
+      background: @blue;
       opacity: 1;
       transition: all 0.3 ease-in;
 
       &:hover {
-        background: @blue;
+        background: @red;
       }
     }
 
@@ -660,6 +662,15 @@ header {
         position: absolute;
         bottom: -18px;
         right: 20px;
+        color: @blue;
+        transition: all 0.3s ease-in;
+        &:hover {
+          color: @red;
+        }
+
+        .zmdi-hc-inverse {
+          color: #fff;
+        }
       }
     }
 
