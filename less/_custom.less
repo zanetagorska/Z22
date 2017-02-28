@@ -57,25 +57,40 @@ header {
     }
 
     .navbar-brand {
-      padding: 29px 0;
+      padding: 38px 0;
       height: 111px;
 
+      @media screen and (min-width: @screen-lg) {
+        padding: 29px 0;
+      }
+
       img {
-        height: 53px;
+        height: 35px;
         margin-left: 15px;
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
         -ms-transition: all 0.3s;
         -o-transition: all 0.3s;
         transition: all 0.3s;
+        @media screen and (min-width: @screen-lg) {
+          height: 53px;
+        }
       }
     }
 
     .navbar-nav {
       a {
+        padding: 25px 10px;
         color: @darkgrey;
         text-transform: uppercase;
-        height: 111px;
+        transition: all 0.2s ease-in;
+        @media screen and (min-width: @screen-sm) {
+          padding: 45.5px 10px;
+          height: 111px;
+        }
+        @media screen and (min-width: @screen-lg) {
+          padding: 45.5px 15px;
+        }
 
         &:hover, &:focus, &:active {
           background: transparent;
