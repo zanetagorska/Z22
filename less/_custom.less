@@ -33,11 +33,8 @@ header {
     left: 0;
     right: 0;
     z-index: 200;
-    -webkit-transition: height 0.3s, top 0.3s;
-    -moz-transition: height 0.3s, top 0.3s;
-    -ms-transition: height 0.3s, top 0.3s;
-    -o-transition: height 0.3s, top 0.3s;
-    transition: height 0.3s, top 0.3s;
+    .transition(@property: height);
+    .transition(@property: top);
 
     @media screen and (min-width: @screen-md) {
       top: 51px;
@@ -67,11 +64,7 @@ header {
       img {
         height: 35px;
         margin-left: 15px;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        -ms-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
+        .transition(@property: height);
         @media screen and (min-width: @screen-lg) {
           height: 53px;
         }
@@ -83,7 +76,7 @@ header {
         padding: 25px 10px;
         color: @darkgrey;
         text-transform: uppercase;
-        transition: all 0.2s ease-in;
+        .transition();
         @media screen and (min-width: @screen-sm) {
           padding: 45.5px 10px;
           height: 111px;
@@ -105,14 +98,14 @@ header {
 
       .zmdi-hc-stack {
         color: @red;
-        transition: all 0.2s ease-in;
+        .transition(@time: 200ms);
         &:hover {
           color: @blue;
         }
       }
       .zmdi-hc-inverse {
         color: #fff;
-        transition: all 0.2s ease-in;
+        .transition(@time: 200ms);
         &:hover {
           color: #eee;
         }
@@ -148,9 +141,12 @@ header {
     }
   }
 
-  .navbar-collapse {
-    background: #fff;
+  @media screen and (max-width: 770px) {
+    .navbar-collapse {
+      background: #fff;
+    }
   }
+
 }
 
 #hero {
@@ -224,7 +220,7 @@ header {
   .no-padding-xs {
     padding-left: 0;
     padding-right: 0;
-    
+
     @media screen and (min-width: @screen-sm) {
       padding-left: 15px;
       padding-right: 15px;
@@ -287,12 +283,12 @@ header {
 }
 
 #skills {
-  transition: all 1s ease;
+  .transition(@time: 1000ms, @function: ease);
   background-color: rgba(0, 0, 0, 0.6);
   padding: 15.928em 0;
 
   &.stopfade {
-    transition: all 1s ease;
+    .transition(@time: 1000ms, @function: ease);
     background-color: rgba(0, 0, 0, 0.1);
   }
 
@@ -308,7 +304,7 @@ header {
     transform: translateX(-50%) translateY(-50%);
     background: url('../img/skills/polina.jpg') no-repeat;
     background-size: cover;
-    transition: 1s opacity;
+    .transition(@property: opacity, @time: 1000ms, @function: ease);
   }
 
   .btn-frame {
@@ -357,7 +353,7 @@ header {
     cursor: pointer;
     font-weight: 700;
     text-transform: uppercase;
-    transition: all 0.4s ease-in;
+    .transition();
 
     &:hover{
       background: @blue;
@@ -426,7 +422,7 @@ header {
         border: solid 10px #03a9f4;
         margin: 0 auto;
         width: 180px;
-        transition: all 0.2s ease-in;
+        .transition();
 
         &:hover {
           border: solid 10px #fff;
@@ -449,7 +445,7 @@ header {
         padding-top: 10px;
         border-top: solid 1px #03a9f4;
         cursor: pointer;
-        transition: all 0.2s ease-in;
+        .transition(@time: 200ms);
 
         &:hover {
           border-top: solid 1px #fff;
@@ -462,7 +458,7 @@ header {
           .zmdi {
             color: #fff;
             font-size: 16px;
-            transition: all 0.2s ease-in;
+            .transition(@time: 200ms);
             &:hover{
               color: @red;
             }
@@ -528,7 +524,7 @@ header {
         height: 90px;
         cursor: pointer;
         overflow: hidden;
-        transition: all 0.4s;
+        .transition(@time: 400ms);
         display: none;
 
         @media screen and (min-width: @screen-sm) {
@@ -580,7 +576,7 @@ header {
       position: absolute;
       background: @blue;
       opacity: 1;
-      transition: all 0.3 ease-in;
+      .transition();
 
       &:hover {
         background: @red;
@@ -605,7 +601,7 @@ header {
     padding: 34px 0;
     margin: 35px 0;
     cursor: pointer;
-    transition: all 0.3s ease;
+    .transition();
 
     h6, p{
       text-transform: none;
@@ -666,7 +662,7 @@ header {
       .product-details .btn {
         font-weight: 500;
         font-size: 1.4285em;
-        transition: all 0.3 ease-in;
+        .transition();
 
         &:hover {
           background: @red;
@@ -697,7 +693,7 @@ header {
         bottom: -18px;
         right: 20px;
         color: @blue;
-        transition: all 0.3s ease-in;
+        .transition();
         &:hover {
           color: @red;
         }

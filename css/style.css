@@ -97,14 +97,22 @@ hr {
 }
 .zmdi-hc-stack {
   color: #fff;
-  transition: all 0.2s ease-in;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -ms-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
 }
 .zmdi-hc-stack:hover {
   color: #f95d5a;
 }
 .zmdi-hc-stack .zmdi-hc-inverse {
   color: #1976d2;
-  transition: all 0.2s ease-in;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -ms-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
 }
 .zmdi-hc-stack .zmdi-hc-inverse:hover {
   color: #fff;
@@ -136,11 +144,16 @@ header .navbar {
   left: 0;
   right: 0;
   z-index: 200;
-  -webkit-transition: height 0.3s, top 0.3s;
-  -moz-transition: height 0.3s, top 0.3s;
-  -ms-transition: height 0.3s, top 0.3s;
-  -o-transition: height 0.3s, top 0.3s;
-  transition: height 0.3s, top 0.3s;
+  -webkit-transition: height 300ms ease-in;
+  -moz-transition: height 300ms ease-in;
+  -ms-transition: height 300ms ease-in;
+  -o-transition: height 300ms ease-in;
+  transition: height 300ms ease-in;
+  -webkit-transition: top 300ms ease-in;
+  -moz-transition: top 300ms ease-in;
+  -ms-transition: top 300ms ease-in;
+  -o-transition: top 300ms ease-in;
+  transition: top 300ms ease-in;
 }
 @media screen and (min-width: 992px) {
   header .navbar {
@@ -169,11 +182,11 @@ header .navbar .navbar-brand {
 header .navbar .navbar-brand img {
   height: 35px;
   margin-left: 15px;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: height 300ms ease-in;
+  -moz-transition: height 300ms ease-in;
+  -ms-transition: height 300ms ease-in;
+  -o-transition: height 300ms ease-in;
+  transition: height 300ms ease-in;
 }
 @media screen and (min-width: 1200px) {
   header .navbar .navbar-brand img {
@@ -184,7 +197,11 @@ header .navbar .navbar-nav a {
   padding: 25px 10px;
   color: #333333;
   text-transform: uppercase;
-  transition: all 0.2s ease-in;
+  -webkit-transition: all 300ms ease-in;
+  -moz-transition: all 300ms ease-in;
+  -ms-transition: all 300ms ease-in;
+  -o-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
 }
 @media screen and (min-width: 768px) {
   header .navbar .navbar-nav a {
@@ -209,14 +226,22 @@ header .navbar #search-btn {
 }
 header .navbar #search-btn .zmdi-hc-stack {
   color: #f95d5a;
-  transition: all 0.2s ease-in;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -ms-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
 }
 header .navbar #search-btn .zmdi-hc-stack:hover {
   color: #2095f2;
 }
 header .navbar #search-btn .zmdi-hc-inverse {
   color: #fff;
-  transition: all 0.2s ease-in;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -ms-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
 }
 header .navbar #search-btn .zmdi-hc-inverse:hover {
   color: #eee;
@@ -244,8 +269,10 @@ header .navbar.smaller #search-btn {
 header .navbar.smaller .navbar-toggle {
   margin: 18px 15px 18px 0;
 }
-header .navbar-collapse {
-  background: #fff;
+@media screen and (max-width: 770px) {
+  header .navbar-collapse {
+    background: #fff;
+  }
 }
 #hero {
   padding: 19.5em 0 0;
@@ -364,12 +391,20 @@ header .navbar-collapse {
   color: #fff;
 }
 #skills {
-  transition: all 1s ease;
+  -webkit-transition: all 1000ms ease;
+  -moz-transition: all 1000ms ease;
+  -ms-transition: all 1000ms ease;
+  -o-transition: all 1000ms ease;
+  transition: all 1000ms ease;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 15.928em 0;
 }
 #skills.stopfade {
-  transition: all 1s ease;
+  -webkit-transition: all 1000ms ease;
+  -moz-transition: all 1000ms ease;
+  -ms-transition: all 1000ms ease;
+  -o-transition: all 1000ms ease;
+  transition: all 1000ms ease;
   background-color: rgba(0, 0, 0, 0.1);
 }
 #skills video {
@@ -384,7 +419,11 @@ header .navbar-collapse {
   transform: translateX(-50%) translateY(-50%);
   background: url('../img/skills/polina.jpg') no-repeat;
   background-size: cover;
-  transition: 1s opacity;
+  -webkit-transition: opacity 1000ms ease;
+  -moz-transition: opacity 1000ms ease;
+  -ms-transition: opacity 1000ms ease;
+  -o-transition: opacity 1000ms ease;
+  transition: opacity 1000ms ease;
 }
 #skills .btn-frame {
   background: rgba(255, 255, 255, 0.1);
@@ -426,7 +465,11 @@ header .navbar-collapse {
   cursor: pointer;
   font-weight: 700;
   text-transform: uppercase;
-  transition: all 0.4s ease-in;
+  -webkit-transition: all 300ms ease-in;
+  -moz-transition: all 300ms ease-in;
+  -ms-transition: all 300ms ease-in;
+  -o-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
 }
 #portfolio .category-item:hover {
   background: #2095f2;
@@ -482,7 +525,11 @@ header .navbar-collapse {
   border: solid 10px #03a9f4;
   margin: 0 auto;
   width: 180px;
-  transition: all 0.2s ease-in;
+  -webkit-transition: all 300ms ease-in;
+  -moz-transition: all 300ms ease-in;
+  -ms-transition: all 300ms ease-in;
+  -o-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
 }
 #team .item .img-box img:hover {
   border: solid 10px #fff;
@@ -501,7 +548,11 @@ header .navbar-collapse {
   padding-top: 10px;
   border-top: solid 1px #03a9f4;
   cursor: pointer;
-  transition: all 0.2s ease-in;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -ms-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
 }
 #team .item .info-box ul:hover {
   border-top: solid 1px #fff;
@@ -513,7 +564,11 @@ header .navbar-collapse {
 #team .item .info-box ul li .zmdi {
   color: #fff;
   font-size: 16px;
-  transition: all 0.2s ease-in;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -ms-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
 }
 #team .item .info-box ul li .zmdi:hover {
   color: #f95d5a;
@@ -572,7 +627,11 @@ header .navbar-collapse {
   height: 90px;
   cursor: pointer;
   overflow: hidden;
-  transition: all 0.4s;
+  -webkit-transition: all 400ms ease-in;
+  -moz-transition: all 400ms ease-in;
+  -ms-transition: all 400ms ease-in;
+  -o-transition: all 400ms ease-in;
+  transition: all 400ms ease-in;
   display: none;
 }
 @media screen and (min-width: 768px) {
@@ -619,7 +678,11 @@ header .navbar-collapse {
   position: absolute;
   background: #2095f2;
   opacity: 1;
-  transition: all 0.3 ease-in;
+  -webkit-transition: all 300ms ease-in;
+  -moz-transition: all 300ms ease-in;
+  -ms-transition: all 300ms ease-in;
+  -o-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
 }
 #clients .owl-controls .owl-prev:hover,
 #clients .owl-controls .owl-next:hover {
@@ -640,7 +703,11 @@ header .navbar-collapse {
   padding: 34px 0;
   margin: 35px 0;
   cursor: pointer;
-  transition: all 0.3s ease;
+  -webkit-transition: all 300ms ease-in;
+  -moz-transition: all 300ms ease-in;
+  -ms-transition: all 300ms ease-in;
+  -o-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
 }
 #pricing-table .product h6,
 #pricing-table .product p {
@@ -689,7 +756,11 @@ header .navbar-collapse {
 #pricing-table .product.distinction .product-details .btn {
   font-weight: 500;
   font-size: 1.4285em;
-  transition: all 0.3 ease-in;
+  -webkit-transition: all 300ms ease-in;
+  -moz-transition: all 300ms ease-in;
+  -ms-transition: all 300ms ease-in;
+  -o-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
 }
 #pricing-table .product.distinction .product-details .btn:hover {
   background: #f95d5a;
@@ -714,7 +785,11 @@ header .navbar-collapse {
   bottom: -18px;
   right: 20px;
   color: #2095f2;
-  transition: all 0.3s ease-in;
+  -webkit-transition: all 300ms ease-in;
+  -moz-transition: all 300ms ease-in;
+  -ms-transition: all 300ms ease-in;
+  -o-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
 }
 #latest-news .news .img-box .zmdi-hc-stack:hover {
   color: #f95d5a;
