@@ -106,6 +106,15 @@ hr {
 .social-media-box .zmdi-hc-inverse:hover {
   color: #fff;
 }
+.zmdi-red {
+  color: #f95d5a;
+}
+.zmdi-white {
+  color: #fff;
+}
+.zmdi-blue {
+  color: #2095f2;
+}
 #minibar .contact {
   margin: 15px 0;
   display: table;
@@ -556,12 +565,6 @@ header .navbar-collapse {
   font-size: 20px;
   margin-top: 50%;
 }
-#testimonials #testimonials-carousel .carousel-control .zmdi-red {
-  color: #f95d5a;
-}
-#testimonials #testimonials-carousel .carousel-control .zmdi-white {
-  color: #fff;
-}
 #clients {
   padding: 3.2857em 0 7.1357em;
   background: #f5f5f5;
@@ -658,9 +661,16 @@ header .navbar-collapse {
 }
 #latest-news .news .img-box {
   margin-bottom: 30px;
+  position: relative;
+  font-size: 18px;
 }
 #latest-news .news .img-box img {
   width: 100%;
+}
+#latest-news .news .img-box .zmdi-hc-stack {
+  position: absolute;
+  bottom: -18px;
+  right: 20px;
 }
 #latest-news .news .news-content {
   margin: 0 15px;

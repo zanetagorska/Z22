@@ -529,14 +529,6 @@ header {
         font-size: 20px;
         margin-top: 50%;
       }
-
-      .zmdi-red {
-        color: @red;
-      }
-
-      .zmdi-white {
-        color: #fff;
-      }
     }
   }
 }
@@ -651,14 +643,23 @@ header {
 
 #latest-news {
   padding: 8.5714em 0;
+
   .news {
     box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.1);
 
     .img-box {
       margin-bottom: 30px;
+      position: relative;
+      font-size: 18px;
 
       img {
         width: 100%;
+      }
+
+      .zmdi-hc-stack {
+        position: absolute;
+        bottom: -18px;
+        right: 20px;
       }
     }
 
