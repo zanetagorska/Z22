@@ -308,24 +308,43 @@ header .navbar-collapse {
   background: linear-gradient(to right, #1975d2 0%, #1975d2 51%, #03a8f4 55%, #03a8f4 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1975d2', endColorstr='#03a8f4', GradientType=1);
 }
-#services ul li {
-  width: 16.6666666666%;
-  float: left;
-  padding: 4.0714em 0;
+#services .no-padding-xs {
+  padding-left: 0;
+  padding-right: 0;
+}
+@media screen and (min-width: 768px) {
+  #services .no-padding-xs {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+#services ul {
+  margin: 0;
+}
+#services ul li .icon-box {
+  height: 200px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+#services ul li .icon-box i {
+  font-size: 3.42857em;
+  margin-bottom: 0.3125em;
+}
+#services ul li .icon-box p {
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  #services ul li .icon-box p {
+    font-size: 14px;
+  }
 }
 #services ul li:nth-child(even) {
   background: #03a9f4;
 }
 #services ul li:nth-child(odd) {
   background: #1976d2;
-}
-#services i {
-  font-size: 3.42857em;
-  margin-bottom: 0.3125em;
-}
-#services p {
-  color: #fff;
-  text-transform: uppercase;
 }
 #what-we-offer {
   padding: 8.5714em 0 3.8571em;
