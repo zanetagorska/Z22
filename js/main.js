@@ -96,6 +96,7 @@ $(document).ready(function(){
   $('#owl-clients').find('.owl-prev').html('<i class="zmdi zmdi-chevron-left"></i>');
   $('#owl-clients').find('.owl-next').html('<i class="zmdi zmdi-chevron-right"></i>');
 
+
 // pricing
   $('.product').hover(
     function(){
