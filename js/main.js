@@ -1,4 +1,6 @@
 // scroll menu
+  new WOW().init();
+
   function init() {
     window.addEventListener('scroll', function(e){
       var distanceY = window.pageYOffset || document.documentElement.scrollTop,
