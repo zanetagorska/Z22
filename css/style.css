@@ -4,11 +4,16 @@
   font-weight: 400;
 }
 h1 {
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
-  margin: 0 auto 0.8214em;
+  margin: 0 auto 0.6em;
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 4em;
+  }
 }
 h2 {
   font-size: 2.42857em;
@@ -79,21 +84,10 @@ section {
   font-weight: 700;
   text-transform: uppercase;
 }
-.btn-lg {
-  padding: 21px 37px;
-  border: 0;
-}
 hr {
   width: 50px;
   border: 2px #2095f2 solid;
   margin: 0 auto 5.2857em;
-}
-.social-media-box {
-  margin: 13px 0;
-  font-size: 12.5px;
-}
-.social-media-box .zmdi-hc-stack {
-  margin: 0 4px;
 }
 .zmdi-hc-stack {
   color: #fff;
@@ -129,8 +123,13 @@ hr {
 #minibar .contact i {
   padding-right: 10px;
 }
-#minibar .contact .social-media {
-  padding-right: 5.1vw;
+#minibar .social-media-box {
+  margin: 13px 0;
+  font-size: 13px;
+  padding-right: 4.427vw;
+}
+#minibar .social-media-box .zmdi-hc-stack {
+  margin: 0 3px;
 }
 header .navbar {
   margin: 0;
@@ -209,9 +208,14 @@ header .navbar .navbar-nav a {
     height: 111px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   header .navbar .navbar-nav a {
     padding: 45.5px 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header .navbar .navbar-nav a {
+    padding: 45.5px 20px;
   }
 }
 header .navbar .navbar-nav a:hover,
@@ -275,15 +279,31 @@ header .navbar.smaller .navbar-toggle {
   }
 }
 #hero {
-  padding: 19.5em 0 0;
   background-image: url("../img/hero/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   color: #fff;
+  font-size: 10px;
+  padding: 30vh 0 0;
+  font-size: 12px;
 }
-#hero h1 {
-  text-transform: uppercase;
+@media screen and (min-width: 768px) {
+  #hero {
+    padding: 20vh 0 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  #hero {
+    font-size: 12px;
+    padding: 30vh 0 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #hero {
+    font-size: 14px;
+    padding: 39vh 0 0;
+  }
 }
 #hero h1 strong {
   color: #03a9f4;
@@ -293,10 +313,24 @@ header .navbar.smaller .navbar-toggle {
   font-weight: 400;
   color: #fff;
   text-transform: none;
-  margin-bottom: 3em;
+  margin-bottom: 3.37em;
 }
 #hero .btn-lg {
-  margin-bottom: 13.7857em;
+  font-size: 1.25em;
+  border: 0;
+  padding: 16px 24px;
+  margin-bottom: 3.7857em;
+}
+@media screen and (min-width: 992px) {
+  #hero .btn-lg {
+    margin-bottom: 5.7857em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #hero .btn-lg {
+    padding: 21px 37px;
+    margin-bottom: 10.7857em;
+  }
 }
 #hero .btn-lg i {
   padding-left: 10px;

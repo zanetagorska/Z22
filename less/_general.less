@@ -25,12 +25,14 @@
 }
 
 h1 {
-  font-size: 4em;
-  // 56px
+  font-size: 3em;
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
-  margin: 0 auto 0.8214em;
+  margin: 0 auto 0.6em;
+  @media screen and (min-width: @screen-sm) {
+    font-size: 4em;
+  }
 }
 
 h2 {
@@ -130,11 +132,6 @@ section {
   text-transform: uppercase;
 }
 
-.btn-lg {
-  padding: 21px 37px;
-  border: 0;
-}
-
 // decorations
 hr {
   width: 50px;
@@ -142,16 +139,7 @@ hr {
   margin: 0 auto 5.2857em;
 }
 
-// social media
-.social-media-box {
-  margin: 13px 0;
-  font-size: 12.5px;
-  .zmdi-hc-stack {
-    margin: 0 4px;
-  }
-}
-
- .zmdi-hc-stack {
+.zmdi-hc-stack {
     color: #fff;
     .transition(@time: 200ms);
     &:hover {

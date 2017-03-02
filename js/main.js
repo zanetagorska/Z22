@@ -21,7 +21,7 @@ $(document).ready(function(){
 // scroll btn
   $('#scroll-btn').click(function (e) {
     $('html,body').animate({
-        scrollTop: 1200,
+        scrollTop: 1100,
     }, 1000);
   });
 

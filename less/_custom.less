@@ -1,5 +1,4 @@
 #minibar {
-
   .contact {
     margin: 15px 0;
     display: table;
@@ -13,9 +12,13 @@
     i {
       padding-right: 10px;
     }
-
-    .social-media {
-      padding-right: 5.1vw;
+  }
+  .social-media-box {
+    margin: 13px 0;
+    font-size: 13px;
+    padding-right: 4.427vw;
+    .zmdi-hc-stack {
+      margin: 0 3px;
     }
   }
 }
@@ -81,8 +84,11 @@ header {
           padding: 45.5px 10px;
           height: 111px;
         }
-        @media screen and (min-width: @screen-lg) {
+        @media screen and (min-width: @screen-md) {
           padding: 45.5px 15px;
+        }
+        @media screen and (min-width: @screen-lg) {
+          padding: 45.5px 20px;
         }
 
         &:hover, &:focus, &:active {
@@ -150,16 +156,28 @@ header {
 }
 
 #hero {
-  padding: 19.5em 0 0;
   background-image: url("../img/hero/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   color: #fff;
+  font-size: 10px;
+  padding: 30vh 0 0;
+  font-size: 12px;
+
+  @media screen and (min-width: @screen-sm) {
+    padding: 20vh 0 0;
+  }
+  @media screen and (min-width: @screen-md) {
+    font-size: 12px;
+    padding: 30vh 0 0;
+  }
+  @media screen and (min-width: @screen-lg) {
+    font-size: 14px;
+    padding: 39vh 0 0;
+  }
 
   h1 {
-    text-transform: uppercase;
-
     strong {
       color: @lightblue;
     }
@@ -170,11 +188,21 @@ header {
     font-weight: 400;
     color: #fff;
     text-transform: none;
-    margin-bottom: 3em;
+    margin-bottom: 3.37em;
   }
 
   .btn-lg {
-    margin-bottom: 13.7857em;
+    font-size: 1.25em;
+    border: 0;
+    padding: 16px 24px;
+    margin-bottom: 3.7857em;
+    @media screen and (min-width: @screen-md) {
+      margin-bottom: 5.7857em;
+    }
+    @media screen and (min-width: @screen-lg) {
+      padding: 21px 37px;
+      margin-bottom: 10.7857em;
+    }
 
     i {
       padding-left: 10px;
