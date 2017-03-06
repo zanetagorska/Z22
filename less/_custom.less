@@ -1,4 +1,5 @@
 #minibar {
+  padding: 0;
   .contact {
     margin: 15px 0;
     display: table;
@@ -244,6 +245,7 @@ header {
   background: -ms-linear-gradient(left, rgba(25,117,210,1) 0%, rgba(25,117,210,1) 51%, rgba(3,168,244,1) 55%, rgba(3,168,244,1) 100%);
   background: linear-gradient(to right, rgba(25,117,210,1) 0%, rgba(25,117,210,1) 51%, rgba(3,168,244,1) 55%, rgba(3,168,244,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1975d2', endColorstr='#03a8f4', GradientType=1 );
+  padding: 0;
 
   .no-padding-xs {
     padding-left: 0;
@@ -289,10 +291,16 @@ header {
 }
 
 #what-we-offer {
-  padding: 8.5714em 0 3.8571em;
-
+  padding: 4em 0;
+  @media screen and (min-width: @screen-sm) {
+    padding: 6em 0;
+  }
+  @media screen and (min-width: @screen-md) {
+    padding: 8.5714em 0 3.8571em;
+  }
+  
   .text-box {
-    margin-bottom: 4.7142em;
+    margin-bottom: 3.7142em;
   }
 
   h5 {
@@ -313,7 +321,11 @@ header {
 #skills {
   .transition(@time: 1000ms, @function: ease);
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 15.928em 0;
+  padding: 8.5em 0;
+
+  @media screen and (min-width: @screen-md) {
+    padding: 14.5em 0;
+  }
 
   &.stopfade {
     .transition(@time: 1000ms, @function: ease);
@@ -367,10 +379,13 @@ header {
 }
 
 #portfolio {
-  padding: 8.5em 0;
 
   #lightgallery {
     margin-bottom: 2.2em;
+  }
+
+  ul {
+    margin-bottom: 4em;
   }
 
   .category-item {
@@ -408,6 +423,11 @@ header {
       width: ~"calc(100% - 16px)";
       height: ~"calc(100% - 16px)";
 
+      .zmdi-hc-stack {
+        font-size: 18px;
+        margin-bottom: 1em;
+      }
+
       h4 {
         color: #fff;
       }
@@ -430,17 +450,23 @@ header {
 }
 
 #team {
-  padding: 119px 0;
+  padding: 5.5em 0 4.5em;
+  @media screen and (min-width: @screen-md) {
+    padding: 8em 0 6em;
+  }
 
   .item {
     background: @blue;
     margin: 0 15px;
-    padding: 0 0 4.7857em 0;
+    padding: 0 0 2.7857em 0;
 
     .img-box {
       border-bottom: solid 1px #03a9f4;
       cursor: pointer;
-      padding: 20px 0;
+      padding: 2em 0;
+      @media screen and (min-width: @screen-md) {
+          padding: 4em 0;
+      }
 
       &:hover {
         border-bottom: solid 1px #fff;
@@ -449,8 +475,11 @@ header {
       img {
         border: solid 10px #03a9f4;
         margin: 0 auto;
-        width: 180px;
+        width: 216px;
         .transition();
+        @media screen and (min-width: @screen-md) {
+          width: 260px;
+        }
 
         &:hover {
           border: solid 10px #fff;
@@ -459,7 +488,14 @@ header {
     }
 
     .info-box {
-      padding-top: 60px;
+      padding-top: 40px;
+      @media screen and (min-width: @screen-md) {
+        padding-top: 60px;
+      }
+
+      h4 {
+        margin: 0 auto;
+      }
 
       p {
         margin-bottom: 10px;
@@ -498,7 +534,10 @@ header {
 }
 
 #fact {
-  padding: 87px 0;
+  padding: 3.5em 0;
+  @media screen and (min-width: @screen-md) {
+    padding: 5.4375em 0;
+  }
 
   .counter {
     margin-bottom: 2em;
@@ -525,22 +564,22 @@ header {
 }
 
 #testimonials {
-  padding: 8.2142em 0;
 
   #testimonials-carousel {
-    margin-top: 6em;
-
+    margin-top: 11em;
     @media screen and (min-width: @screen-md) {
       margin-top: 9em;
     }
-
+    
     .carousel-indicators {
       top: 0;
-      width: 60%;
-      margin-top: -10em;
+      margin-top: -12em;
+      width: 100%;
+      left: 0;
+      margin-left: 0;
 
       @media screen and (min-width: @screen-lg) {
-        width: 60%; 
+        margin-top: -10em;
       }
 
       li {
@@ -558,7 +597,6 @@ header {
         @media screen and (min-width: @screen-sm) {
           display: inline-block;
         }
-        
 
         &.active {
           box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
@@ -571,9 +609,17 @@ header {
     }
 
     .carousel-inner {
-      width: 85%;
+      width: 90%;
       margin: 0 auto;
       border: 1px solid #fff;
+      @media screen and (min-width: @screen-lg) {
+        width: 100%;
+      }
+    }
+
+    .item {
+      width: 94%;
+      margin: 0 auto;
     }
 
     .text-block {
@@ -588,11 +634,25 @@ header {
       background-image: none;
       opacity: 1;
       text-shadow: none;
-        top: 40%;
-        position: absolute;
+      top: 40%;
+      position: absolute;
+
+      &.left {
+        left: -2.5%;
+        @media screen and (min-width: @screen-lg) {
+          left: -7.5%;
+        }
+      }
+
+      &.right {
+        right: -2.5%;
+        @media screen and (min-width: @screen-lg) {
+          right: -7.5%;
+        }
+      }
 
       .zmdi-hc-stack {
-        font-size: 20px;
+        font-size: 18px;
       }
     }
   }
@@ -629,6 +689,9 @@ header {
   padding: 8.5714em 0 0;
 
   @media screen and (min-width: @screen-sm) {
+    height: 885px;
+  }
+  @media screen and (min-width: @screen-md) {
     height: 953px;
   }
   
@@ -645,8 +708,11 @@ header {
     }
 
     .product-header {
-      padding-bottom: 30px;
+      padding-bottom: 0px;
       border-bottom: solid 1px #f5f5f5;
+      @media screen and (min-width: @screen-md) {
+        padding-bottom: 30px;
+      }
       .transition();
 
       .price-box {
@@ -663,7 +729,10 @@ header {
     .product-details {
 
       ul {
-        margin: 43px 0;
+        margin: 24px 0;
+        @media screen and (min-width: @screen-md) {
+          margin: 43px 0;
+        }
 
         li {
           color: #727272;
@@ -695,7 +764,10 @@ header {
       }
 
       ul {
-        margin: 55px 0;
+        margin: 24px 0;
+        @media screen and (min-width: @screen-md) {
+          margin: 55px 0;
+        }
       }
 
       .product-details .btn {
@@ -713,7 +785,10 @@ header {
 }
 
 #latest-news {
-  padding: 8.5714em 0;
+  padding: 3.5em 0;
+  @media screen and (min-width: @screen-md) {
+    padding: 8.5714em 0;
+  }
 
   .news {
     box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.1);
@@ -801,8 +876,19 @@ header {
 }
 
 footer {
-  padding: 100px 0;
+  padding: 3em 0;
+  @media screen and (min-width: @screen-lg) {
+    padding: 4.6em 0 7em;
+  }
+
+  p {
+    padding: 1em;
+    @media screen and (min-width: @screen-md) {
+       margin-bottom: 2em;
+    }
+  }
   .zmdi-hc-stack {
-    font-size: 15px;
+    font-size: 17px;
+    margin: 0 3px;
   }
 }
